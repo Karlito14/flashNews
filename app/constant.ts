@@ -15,23 +15,23 @@ import topPng from '@/public/assets/top.png';
 import tourismPng from '@/public/assets/tourism.png';
 import worldPng from '@/public/assets/world.png';
 
-export const CATEGORIES_ITEMS = {
+const CATEGORIES_ITEMS = {
     business: { src: businessPng, alt: 'Business logo', category: 'business' },
-    crime: { src: crimePng, alt: 'Crime logo', category: 'crime' },
+    crime: { src: crimePng, alt: 'Crime logo', category: 'faits divers' },
     domestic: { src: domesticPng, alt: 'Domestic logo', category: 'domestic' },
     education: { src: educationPng, alt: 'Education logo', category: 'education' },
-    entertainment: { src: entertainmentPng, alt: 'Entertainment logo', category: 'entertainment'},
-    environment: { src: environmentPng, alt: 'Environment logo', category: 'environment'},
-    food: { src: foodPng, alt: 'Food logo', category: 'food' },
+    entertainment: { src: entertainmentPng, alt: 'Entertainment logo', category: 'entertainment' },
+    environment: { src: environmentPng, alt: 'Environment logo', category: 'environnement' },
+    food: { src: foodPng, alt: 'Food logo', category: 'alimentation' },
     health: { src: healthPng, alt: 'Health logo', category: 'health' },
-    other: { src: otherPng, alt: 'Other logo', category: 'other' },
+    other: { src: otherPng, alt: 'Other logo', category: 'autres' },
     science: { src: sciencePng, alt: 'Science logo', category: 'science' },
     sports: { src: sportsPng, alt: 'Sport logo', category: 'sports' },
-    politics: { src: politicsPng, alt: 'Politics logo', category: 'politics' },
-    technology: { src: technologyPng, alt: 'Technology logo', category: 'technology'},
+    politics: { src: politicsPng, alt: 'Politics logo', category: 'politique' },
+    technology: { src: technologyPng, alt: 'Technology logo', category: 'technologie'},
     top: { src: topPng, alt: 'Top logo', category: 'top' },
-    tourism: { src: tourismPng, alt: 'Tourism logo', category: 'tourism' },
-    world: { src: worldPng, alt: 'World logo', category: 'world' },
+    tourism: { src: tourismPng, alt: 'Tourism logo', category: 'tourismd' },
+    world: { src: worldPng, alt: 'World logo', category: 'monde' },
 };
 
 export const NAV_ITEMS = [
