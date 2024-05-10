@@ -19,6 +19,23 @@ export interface Article {
   source_id: string
   source_priority: number
   country: string[]
-  category: string[]
+  category: ArticleCategory[]
   language: string
 }
+
+export type ArticleCategory = 
+  |'business'
+  |'crime'
+  |'domestic'
+  |'education'
+  |'environment'
+  |'food'
+  |'health'
+  |'world'
+  |'top'
+  |'tourism'
+  |'science'
+  |'sports'
+  |'other'
+  |'politics'
+  |'technology';

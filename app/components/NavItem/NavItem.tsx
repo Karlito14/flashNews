@@ -1,4 +1,5 @@
 'use client';
+import { ArticleCategory } from '@/app/types/article-types';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';

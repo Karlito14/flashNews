@@ -1,7 +1,8 @@
 import { CATEGORIES_ITEMS } from '@/app/constant';
+import { ArticleCategory } from '@/app/types/article-types';
 import Image from 'next/image';
 
-export default function CatgeoryPage (props: { params: { id: keyof typeof CATEGORIES_ITEMS }}) {
+export default function CatgeoryPage (props: { params: { id: ArticleCategory }}) {
     const categoryItem = CATEGORIES_ITEMS[props.params.id];
 
     return (
