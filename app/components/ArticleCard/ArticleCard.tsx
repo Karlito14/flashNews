@@ -1,8 +1,9 @@
 import { Article } from '@/app/types/article-types';
 import Image from 'next/image';
 import Link from 'next/link';
-import defaultImage from '@/public/assets/default-news.png';
 import { CATEGORIES_ITEMS } from '@/app/constant';
+import { ImageComponent } from '../ImageWithFallback/ImageWithFallback';
+import defaultImage from '@/public/assets/default-news.png';
 
 export const ArticleCard = (props: { article: Article}) => {
     return (
@@ -20,7 +21,14 @@ export const ArticleCard = (props: { article: Article}) => {
                     </header>
                     <section>
                         <h2 className='font-semibold text-xl line-clamp-2 h-14 mb-2'>{props.article.title}</h2>
-                        <Image src={props.article.image_url || defaultImage} alt='' height={200} width={300} className='h-40 object-cover' />
+                        <ImageComponent 
+                            image={props.article.image_url} 
+                            alt='' 
+                            height={200} 
+                            width={300} 
+                            className='h-40 object-cover w-full rounded-lg' 
+                            fallback={defaultImage} 
+                        />
                     </section>
                 </article>
             </Link>
