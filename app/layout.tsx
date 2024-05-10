@@ -11,9 +11,9 @@ export default function RootLayout({
         <html lang="en">
             <body className='flex p-8'>
                 <Nav />
-                <div className='px-8 mt-16'>
+                <main className='px-8 mt-16'>
                     {children}
-                </div>
+                </main>
             </body>
         </html>
     );
