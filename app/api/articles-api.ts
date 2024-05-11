@@ -7,4 +7,10 @@ export class ApiArticles {
         const data: ArticleList = await response.json();
         return data.results;
     };
+
+    static async fetchByCategorie(category: string) {
+        const response = await fetch(`http://localhost:3090/news?category=${category}`);
+        const data: ArticleList = await response.json();
+        return data.results;
+    }
 }

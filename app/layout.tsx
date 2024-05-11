@@ -1,11 +1,20 @@
 import { Nav } from './components/Nav/Nav';
 import './globals.css';
-import { Inter, Roboto_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
  
 export const inter = Inter({
     subsets: ['latin'],
     display: 'swap',
 });
+
+export const metadata: Metadata = {
+    title: 'Flash News',
+    description: 'Get the latest flash news',
+    icons: {
+        icon: 'http://localhost:3000/assets/lightning.png',
+    },
+};
 
 export default function RootLayout({
     children,
