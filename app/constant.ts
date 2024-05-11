@@ -17,7 +17,7 @@ import worldPng from '@/public/assets/world.png';
 
 export const CATEGORIES_ITEMS = {
     business: { src: businessPng, alt: 'Business logo', category: 'business' },
-    crime: { src: crimePng, alt: 'Crime logo', category: 'faits divers' },
+    crime: { src: crimePng, alt: 'Crime logo', category: 'crime' },
     domestic: { src: domesticPng, alt: 'Domestic logo', category: 'domestic' },
     education: { src: educationPng, alt: 'Education logo', category: 'education' },
     entertainment: { src: entertainmentPng, alt: 'Entertainment logo', category: 'entertainment' },
@@ -35,8 +35,8 @@ export const CATEGORIES_ITEMS = {
 };
 
 export const NAV_ITEMS = [
-    CATEGORIES_ITEMS.business,
     CATEGORIES_ITEMS.environment,
     CATEGORIES_ITEMS.technology,
+    CATEGORIES_ITEMS.science,
     CATEGORIES_ITEMS.world,
 ];

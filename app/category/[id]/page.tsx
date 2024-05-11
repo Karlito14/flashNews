@@ -6,12 +6,12 @@ import Image from 'next/image';
 
 export default async function CatgeoryPage (props: { params: { id: ArticleCategory }}) {
     const categoryItem = CATEGORIES_ITEMS[props.params.id];
-
+   
     const data = await ApiArticles.fetchByCategorie(props.params.id);
 
     return (
         <>
-            <header className='flex items-center space-x-4'>
+            <header className='flex items-center space-x-4 mb-6'>
                 <Image src={categoryItem.src} alt={categoryItem.alt} width={40} height={40} />
                 <h1 className="font-bold capitalize text-3xl">{categoryItem.category} news</h1>
             </header>
