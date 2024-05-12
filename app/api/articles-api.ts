@@ -17,6 +17,6 @@ export class ApiArticles {
     static async fetchByTitle(title: string) {
         const response = await fetch(`${process.env.API_BASE_URL}?qInTitle=${title}`);
         const data: ArticleList = await response.json();
-        return data.results;
+        return data.results[0];
     }
 }

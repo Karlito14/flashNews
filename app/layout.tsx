@@ -25,9 +25,9 @@ export default function RootLayout({
         <html lang="en">
             <body className={`flex p-8 ${inter.className}`}>
                 <Nav />
-                <main className='px-8 mt-16'>
+                <div className='px-8 mt-16'>
                     {children}
-                </main>
+                </div>
             </body>
         </html>
     );

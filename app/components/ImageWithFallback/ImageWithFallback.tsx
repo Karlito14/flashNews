@@ -5,9 +5,9 @@ import Image, { StaticImageData } from 'next/image';
 interface ImageType {
     image: string;
     fallback: StaticImageData;
-    className: string;
-    width: number;
-    height: number;
+    className?: string;
+    width?: number;
+    height?: number;
     alt: string;
 }
 
