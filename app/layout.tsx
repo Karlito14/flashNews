@@ -1,5 +1,5 @@
 import { Nav } from './components/Nav/Nav';
-import './globals.css';
+import './style/globals.css';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
  

@@ -16,7 +16,7 @@ export default async function CatgeoryPage (props: { params: { id: ArticleCatego
     const categoryItem = CATEGORIES_ITEMS[props.params.id];
    
     const data = await ApiArticles.fetchByCategorie(props.params.id);
-
+    
     return (
         <>
             <header className='flex items-center space-x-4 mb-6'>
