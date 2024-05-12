@@ -1,8 +1,16 @@
 import { ApiArticles } from '@/app/api/articles-api';
 import { ArticleList } from '@/app/components/ArticleList/ArticleList';
-import { CATEGORIES_ITEMS } from '@/app/constant';
+import { CATEGORIES_ITEMS, NAV_ITEMS } from '@/app/constant';
 import { ArticleCategory } from '@/app/types/article-types';
 import Image from 'next/image';
+
+export function generateStaticParams() {
+    return NAV_ITEMS.map(categorie => {
+        return {
+            id: categorie.category,
+        };
+    });
+}
 
 export default async function CatgeoryPage (props: { params: { id: ArticleCategory }}) {
     const categoryItem = CATEGORIES_ITEMS[props.params.id];
