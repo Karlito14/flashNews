@@ -8,7 +8,7 @@ import defaultImage from '@/public/assets/default-news.png';
 export const ArticleCard = (props: { article: Article}) => {
     return (
         <li className='w-80 hover:bg-slate-50 transition transform hover:scale-105 border-2 border-gray-100 py-4 px-6 rounded-xl shadow-sm'>
-            <Link href={'/articles'}>
+            <Link href={`/articles/${props.article.title}`}>
                 <article className='space-y-4'>
                     <header className='capitalize'>
                         <div className='flex items-center space-x-2'>
