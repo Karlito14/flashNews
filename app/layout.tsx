@@ -2,6 +2,10 @@ import { Nav } from './components/Nav/Nav';
 import './style/globals.css';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
+import Clock from '@/app/components/Clock/Clock';
+
+const ClockNoSSR = dynamic(() => import('@/app/components/Clock/Clock'), { ssr: false});
  
 export const inter = Inter({
     subsets: ['latin'],
@@ -24,7 +28,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`flex p-8 ${inter.className}`}>
-                <Nav />
+                <div>
+                    <ClockNoSSR />
+                    <Nav />
+                </div>
                 <div className='px-8 mt-16'>
                     {children}
                 </div>
