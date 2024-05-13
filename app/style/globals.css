@@ -10,4 +10,8 @@
     img {
         max-width: none;
     }
+
+    h1 {
+      @apply text-4xl capitalize font-bold
+    }
 }

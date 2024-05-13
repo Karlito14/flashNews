@@ -9,7 +9,7 @@ export default async function Home() {
         <>
             <header className='flex items-center space-x-2 mb-4'>
                 <Image src={top} alt='' className='h-10 w-10' />
-                <h1 className='capitalize font-bold text-4xl'>Latest news</h1>
+                <h1>Latest news</h1>
             </header>
             <main>
                 <ArticleList articleList={articleList} />

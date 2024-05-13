@@ -8,13 +8,13 @@ export class ApiArticles {
         return data.results;
     };
 
-    static async fetchByCategorie(category: string) {
+    static async fetchByCategorie(category: string): Promise<Article[]> {
         const response = await fetch(`${process.env.API_BASE_URL}?category=${category}`);
         const data: ArticleList = await response.json();
         return data.results;
     }
 
-    static async fetchByTitle(title: string) {
+    static async fetchByTitle(title: string): Promise<Article> {
         const response = await fetch(`${process.env.API_BASE_URL}?qInTitle=${title}`);
         const data: ArticleList = await response.json();
         return data.results[0];
