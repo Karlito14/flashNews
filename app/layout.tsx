@@ -3,7 +3,6 @@ import './style/globals.css';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
-import Clock from '@/app/components/Clock/Clock';
 
 const ClockNoSSR = dynamic(() => import('@/app/components/Clock/Clock'), { ssr: false});
  
