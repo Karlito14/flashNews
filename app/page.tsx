@@ -2,9 +2,10 @@ import Image from 'next/image';
 import { ApiArticles } from './api/articles-api';
 import { ArticleList } from './components/ArticleList/ArticleList';
 import top from '@/public/assets/top.png';
-import { CryptoCard } from './components/Cryptocard/CryptoCard';
+import { CryptoCard } from './components/Cryptocard/CryptoCard.server';
 
 export default async function Home() {
+    
     const articleList = await ApiArticles.fetchAllArticles();
     return (
         <>
