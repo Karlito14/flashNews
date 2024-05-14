@@ -3,7 +3,7 @@ import { CryptoApi } from '@/app/api/crypto-api';
 import { CryptoInterface } from '@/app/types/crypto-types';
 import { useEffect, useState } from 'react';
 
-export const CryptoCardClient = async (props: { initialData: CryptoInterface}) => {
+export const CryptoCardClient = (props: { initialData: CryptoInterface}) => {
     const [crypto, setCrypto] = useState<CryptoInterface>(props.initialData);
     
     const fetchBitcoin = async () => {

@@ -1,5 +1,6 @@
 import { Nav } from './components/Nav/Nav';
 import './style/globals.css';
+import 'react-loading-skeleton/dist/skeleton.css';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
